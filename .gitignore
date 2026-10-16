@@ -140,3 +140,27 @@ cython_debug/
 # Custom
 output/*
 !output/.gitkeep
+
+# Local analysis and validation artifacts must never be published.
+/tests/
+/raw/
+/extracted_analysis/
+/results/
+/final_report/
+/reports/
+/evidence/
+/local_validation/
+*.hbc
+*.bundle
+*.apk
+*.apks
+*.xapk
+*.aar
+*.hasm
+*.keystore
+*.jks
+*.pcap
+*.pcapng
+**/original.hbc
+**/string.json
+**/switch_tables.json

@@ -1,0 +1,3 @@
+# These bytes are hashed as part of the pinned Hermes profile.
+hbctool/hbc/hbc98/reference/* text eol=lf
+hbctool/hbc/hbc98/opcode.json text eol=lf
