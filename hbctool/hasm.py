@@ -31,6 +31,10 @@ def write_func(f, func, i, hbc):
     f.write("EndFunction\n\n")
 
 def dump(hbc, path, force=False):
+    from hbctool.hbc.hbc98 import HBC98
+    if isinstance(hbc, HBC98):
+        from hbctool.hbc.hbc98.hasm import dump as dump98
+        return dump98(hbc, path)
     
     if os.path.exists(path) and not force:
         c = input(f"'{path}' exists. Do you want to remove it ? (y/n): ").lower().strip()
@@ -129,6 +133,15 @@ def read_func(func_asms, i):
 
 
 def load(path):
+    metadata_path = os.path.join(path, "metadata.json")
+    if os.path.isfile(metadata_path):
+        with open(metadata_path, encoding="utf-8") as meta_file:
+            version_metadata = json.load(meta_file)
+        if version_metadata.get("formatVersion") == 2:
+            from hbctool.hbc.hbc98.hasm import load as load98
+            return load98(path)
+        if version_metadata.get("version") == 98 or version_metadata.get("header", {}).get("version") == 98:
+            raise ValueError("HBC v98 requires HASM format 2")
     assert os.path.exists(path), f"{path} does not exists."
     assert os.path.exists(f"{path}/metadata.json"), f"metadata.json not found."
     assert os.path.exists(f"{path}/string.json"), f"string.json not found."

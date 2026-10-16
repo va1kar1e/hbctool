@@ -1,6 +1,7 @@
 
 from hbctool.util import *
 from hbctool.hbc.hbc85 import HBC85
+from hbctool.hbc.hbc98 import HBC98
 from hbctool.hbc.hbc84 import HBC84
 from hbctool.hbc.hbc76 import HBC76
 from hbctool.hbc.hbc74 import HBC74
@@ -16,6 +17,7 @@ INIT_HEADER = {
 BYTECODE_ALIGNMENT = 4
 
 HBC = {
+    98: HBC98,
     85: HBC85,
     84: HBC84,
     76: HBC76,
@@ -40,14 +42,21 @@ def loado(obj):
 
     assert magic == MAGIC, f"The magic ({hex(magic)}) is invalid. (must be {hex(MAGIC)})"
     assert version in HBC, f"The HBC version ({version}) is not supported."
+    if version == 98:
+        raise ValueError("HBC v98 uses HASM format 2 with an original.hbc snapshot")
 
     hbc = HBC[version]()
     hbc.setObj(obj)
     return hbc
 
 def dump(hbc, f):
+    if isinstance(hbc, HBC98):
+        f.write(hbc.data)
+        return
     f = BitWriter(f)
     hbc.export(f)
 
 def dumpo(hbc):
+    if isinstance(hbc, HBC98):
+        raise ValueError("HBC v98 uses HASM format 2 with an original.hbc snapshot")
     return hbc.getObj()

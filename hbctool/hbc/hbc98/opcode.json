@@ -1,0 +1,2204 @@
+{
+  "profile": "hermes-v250829098.0.10",
+  "hermes_commit": "becc964bd16002569bf74c4d8c190cfd2ad38985",
+  "source_sha256": "0fb3a6b977fbf327f8bf019e7f78690e838cdb06c5d6ae1919e2fff3147448e7",
+  "opcodes": [
+    {
+      "name": "Unreachable",
+      "operands": [],
+      "opcode": 0,
+      "meanings": {}
+    },
+    {
+      "name": "NewObjectWithBuffer",
+      "operands": [
+        "Reg8",
+        "UInt16",
+        "UInt16"
+      ],
+      "opcode": 1,
+      "meanings": {}
+    },
+    {
+      "name": "NewObjectWithBufferLong",
+      "operands": [
+        "Reg8",
+        "UInt32",
+        "UInt32"
+      ],
+      "opcode": 2,
+      "meanings": {}
+    },
+    {
+      "name": "NewObjectWithBufferAndParent",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32",
+        "UInt32"
+      ],
+      "opcode": 3,
+      "meanings": {}
+    },
+    {
+      "name": "NewObject",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 4,
+      "meanings": {}
+    },
+    {
+      "name": "NewObjectWithParent",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 5,
+      "meanings": {}
+    },
+    {
+      "name": "NewArrayWithBuffer",
+      "operands": [
+        "Reg8",
+        "UInt16",
+        "UInt16",
+        "UInt16"
+      ],
+      "opcode": 6,
+      "meanings": {}
+    },
+    {
+      "name": "NewArrayWithBufferLong",
+      "operands": [
+        "Reg8",
+        "UInt16",
+        "UInt16",
+        "UInt32"
+      ],
+      "opcode": 7,
+      "meanings": {}
+    },
+    {
+      "name": "NewArray",
+      "operands": [
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 8,
+      "meanings": {}
+    },
+    {
+      "name": "NewFastArray",
+      "operands": [
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 9,
+      "meanings": {}
+    },
+    {
+      "name": "FastArrayLength",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 10,
+      "meanings": {}
+    },
+    {
+      "name": "FastArrayLoad",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 11,
+      "meanings": {}
+    },
+    {
+      "name": "FastArrayStore",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 12,
+      "meanings": {}
+    },
+    {
+      "name": "FastArrayPush",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 13,
+      "meanings": {}
+    },
+    {
+      "name": "FastArrayAppend",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 14,
+      "meanings": {}
+    },
+    {
+      "name": "CacheNewObject",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32",
+        "UInt8"
+      ],
+      "opcode": 15,
+      "meanings": {}
+    },
+    {
+      "name": "Mov",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 16,
+      "meanings": {}
+    },
+    {
+      "name": "MovLong",
+      "operands": [
+        "Reg32",
+        "Reg32"
+      ],
+      "opcode": 17,
+      "meanings": {}
+    },
+    {
+      "name": "Negate",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 18,
+      "meanings": {}
+    },
+    {
+      "name": "Not",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 19,
+      "meanings": {}
+    },
+    {
+      "name": "BitNot",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 20,
+      "meanings": {}
+    },
+    {
+      "name": "TypeOf",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 21,
+      "meanings": {}
+    },
+    {
+      "name": "Eq",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 22,
+      "meanings": {}
+    },
+    {
+      "name": "StrictEq",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 23,
+      "meanings": {}
+    },
+    {
+      "name": "Neq",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 24,
+      "meanings": {}
+    },
+    {
+      "name": "StrictNeq",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 25,
+      "meanings": {}
+    },
+    {
+      "name": "Less",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 26,
+      "meanings": {}
+    },
+    {
+      "name": "LessEq",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 27,
+      "meanings": {}
+    },
+    {
+      "name": "Greater",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 28,
+      "meanings": {}
+    },
+    {
+      "name": "GreaterEq",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 29,
+      "meanings": {}
+    },
+    {
+      "name": "Add",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 30,
+      "meanings": {}
+    },
+    {
+      "name": "AddN",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 31,
+      "meanings": {}
+    },
+    {
+      "name": "AddS",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 32,
+      "meanings": {}
+    },
+    {
+      "name": "Mul",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 33,
+      "meanings": {}
+    },
+    {
+      "name": "MulN",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 34,
+      "meanings": {}
+    },
+    {
+      "name": "Div",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 35,
+      "meanings": {}
+    },
+    {
+      "name": "DivN",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 36,
+      "meanings": {}
+    },
+    {
+      "name": "Mod",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 37,
+      "meanings": {}
+    },
+    {
+      "name": "Sub",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 38,
+      "meanings": {}
+    },
+    {
+      "name": "SubN",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 39,
+      "meanings": {}
+    },
+    {
+      "name": "LShift",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 40,
+      "meanings": {}
+    },
+    {
+      "name": "RShift",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 41,
+      "meanings": {}
+    },
+    {
+      "name": "URshift",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 42,
+      "meanings": {}
+    },
+    {
+      "name": "BitAnd",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 43,
+      "meanings": {}
+    },
+    {
+      "name": "BitXor",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 44,
+      "meanings": {}
+    },
+    {
+      "name": "BitOr",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 45,
+      "meanings": {}
+    },
+    {
+      "name": "Inc",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 46,
+      "meanings": {}
+    },
+    {
+      "name": "Dec",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 47,
+      "meanings": {}
+    },
+    {
+      "name": "InstanceOf",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 48,
+      "meanings": {}
+    },
+    {
+      "name": "IsIn",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 49,
+      "meanings": {}
+    },
+    {
+      "name": "PrivateIsIn",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 50,
+      "meanings": {}
+    },
+    {
+      "name": "TypeOfIs",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 51,
+      "meanings": {}
+    },
+    {
+      "name": "GetParentEnvironment",
+      "operands": [
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 52,
+      "meanings": {}
+    },
+    {
+      "name": "GetEnvironment",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 53,
+      "meanings": {}
+    },
+    {
+      "name": "GetClosureEnvironment",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 54,
+      "meanings": {}
+    },
+    {
+      "name": "StoreToEnvironment",
+      "operands": [
+        "Reg8",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 55,
+      "meanings": {}
+    },
+    {
+      "name": "StoreToEnvironmentL",
+      "operands": [
+        "Reg8",
+        "UInt16",
+        "Reg8"
+      ],
+      "opcode": 56,
+      "meanings": {}
+    },
+    {
+      "name": "StoreNPToEnvironment",
+      "operands": [
+        "Reg8",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 57,
+      "meanings": {}
+    },
+    {
+      "name": "StoreNPToEnvironmentL",
+      "operands": [
+        "Reg8",
+        "UInt16",
+        "Reg8"
+      ],
+      "opcode": 58,
+      "meanings": {}
+    },
+    {
+      "name": "LoadFromEnvironment",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 59,
+      "meanings": {}
+    },
+    {
+      "name": "LoadFromEnvironmentL",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 60,
+      "meanings": {}
+    },
+    {
+      "name": "GetGlobalObject",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 61,
+      "meanings": {}
+    },
+    {
+      "name": "GetNewTarget",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 62,
+      "meanings": {}
+    },
+    {
+      "name": "LoadParentNoTraps",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 63,
+      "meanings": {}
+    },
+    {
+      "name": "CreateFunctionEnvironment",
+      "operands": [
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 64,
+      "meanings": {}
+    },
+    {
+      "name": "CreateTopLevelEnvironment",
+      "operands": [
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 65,
+      "meanings": {}
+    },
+    {
+      "name": "CreateEnvironment",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 66,
+      "meanings": {}
+    },
+    {
+      "name": "DeclareGlobalVar",
+      "operands": [
+        "UInt32"
+      ],
+      "opcode": 67,
+      "meanings": {
+        "0": "string"
+      }
+    },
+    {
+      "name": "GetByIdShort",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt8"
+      ],
+      "opcode": 68,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "GetById",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt16"
+      ],
+      "opcode": 69,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "GetByIdLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 70,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "GetByIdWithReceiverLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 71,
+      "meanings": {
+        "4": "string"
+      }
+    },
+    {
+      "name": "TryGetById",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt16"
+      ],
+      "opcode": 72,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "TryGetByIdLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 73,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "PutByIdLoose",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt16"
+      ],
+      "opcode": 74,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "PutByIdStrict",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt16"
+      ],
+      "opcode": 75,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "PutByIdLooseLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 76,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "PutByIdStrictLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 77,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "TryPutByIdLoose",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt16"
+      ],
+      "opcode": 78,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "TryPutByIdStrict",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt16"
+      ],
+      "opcode": 79,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "TryPutByIdLooseLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 80,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "TryPutByIdStrictLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 81,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "PutOwnBySlotIdx",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 82,
+      "meanings": {}
+    },
+    {
+      "name": "PutOwnBySlotIdxLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 83,
+      "meanings": {}
+    },
+    {
+      "name": "GetOwnBySlotIdx",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 84,
+      "meanings": {}
+    },
+    {
+      "name": "GetOwnBySlotIdxLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 85,
+      "meanings": {}
+    },
+    {
+      "name": "DefineOwnById",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt16"
+      ],
+      "opcode": 86,
+      "meanings": {}
+    },
+    {
+      "name": "DefineOwnByIdLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 87,
+      "meanings": {
+        "3": "string"
+      }
+    },
+    {
+      "name": "DefineOwnByIndex",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 88,
+      "meanings": {}
+    },
+    {
+      "name": "DefineOwnByIndexL",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 89,
+      "meanings": {}
+    },
+    {
+      "name": "DefineOwnInDenseArray",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 90,
+      "meanings": {}
+    },
+    {
+      "name": "DefineOwnInDenseArrayL",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 91,
+      "meanings": {}
+    },
+    {
+      "name": "DefineOwnByVal",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 92,
+      "meanings": {}
+    },
+    {
+      "name": "GetByVal",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 93,
+      "meanings": {}
+    },
+    {
+      "name": "GetByIndex",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 94,
+      "meanings": {}
+    },
+    {
+      "name": "GetByValWithReceiver",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 95,
+      "meanings": {}
+    },
+    {
+      "name": "PutByValLoose",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 96,
+      "meanings": {}
+    },
+    {
+      "name": "PutByValStrict",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 97,
+      "meanings": {}
+    },
+    {
+      "name": "PutByValWithReceiver",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 98,
+      "meanings": {}
+    },
+    {
+      "name": "DelByVal",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 99,
+      "meanings": {}
+    },
+    {
+      "name": "AddOwnPrivateBySym",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 100,
+      "meanings": {}
+    },
+    {
+      "name": "GetOwnPrivateBySym",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 101,
+      "meanings": {}
+    },
+    {
+      "name": "PutOwnPrivateBySym",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 102,
+      "meanings": {}
+    },
+    {
+      "name": "DefineOwnGetterSetterByVal",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 103,
+      "meanings": {}
+    },
+    {
+      "name": "GetPNameList",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 104,
+      "meanings": {}
+    },
+    {
+      "name": "GetNextPName",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 105,
+      "meanings": {}
+    },
+    {
+      "name": "Call",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 106,
+      "meanings": {}
+    },
+    {
+      "name": "Construct",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 107,
+      "meanings": {}
+    },
+    {
+      "name": "Call1",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 108,
+      "meanings": {}
+    },
+    {
+      "name": "CallWithNewTarget",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 109,
+      "meanings": {}
+    },
+    {
+      "name": "Call2",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 110,
+      "meanings": {}
+    },
+    {
+      "name": "Call3",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 111,
+      "meanings": {}
+    },
+    {
+      "name": "Call4",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 112,
+      "meanings": {}
+    },
+    {
+      "name": "CallWithNewTargetLong",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 113,
+      "meanings": {}
+    },
+    {
+      "name": "CallRequire",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 114,
+      "meanings": {}
+    },
+    {
+      "name": "CallBuiltin",
+      "operands": [
+        "Reg8",
+        "UInt8",
+        "UInt8"
+      ],
+      "opcode": 115,
+      "meanings": {}
+    },
+    {
+      "name": "CallBuiltinLong",
+      "operands": [
+        "Reg8",
+        "UInt8",
+        "UInt32"
+      ],
+      "opcode": 116,
+      "meanings": {}
+    },
+    {
+      "name": "GetBuiltinClosure",
+      "operands": [
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 117,
+      "meanings": {}
+    },
+    {
+      "name": "Ret",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 118,
+      "meanings": {}
+    },
+    {
+      "name": "Catch",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 119,
+      "meanings": {}
+    },
+    {
+      "name": "DirectEval",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 120,
+      "meanings": {}
+    },
+    {
+      "name": "Throw",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 121,
+      "meanings": {}
+    },
+    {
+      "name": "ThrowIfEmpty",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 122,
+      "meanings": {}
+    },
+    {
+      "name": "ThrowIfUndefined",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 123,
+      "meanings": {}
+    },
+    {
+      "name": "ThrowIfThisInitialized",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 124,
+      "meanings": {}
+    },
+    {
+      "name": "Debugger",
+      "operands": [],
+      "opcode": 125,
+      "meanings": {}
+    },
+    {
+      "name": "AsyncBreakCheck",
+      "operands": [],
+      "opcode": 126,
+      "meanings": {}
+    },
+    {
+      "name": "ProfilePoint",
+      "operands": [
+        "UInt16"
+      ],
+      "opcode": 127,
+      "meanings": {}
+    },
+    {
+      "name": "CreateBaseClass",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 128,
+      "meanings": {}
+    },
+    {
+      "name": "CreateBaseClassLongIndex",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 129,
+      "meanings": {}
+    },
+    {
+      "name": "CreateDerivedClass",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 130,
+      "meanings": {}
+    },
+    {
+      "name": "CreateDerivedClassLongIndex",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 131,
+      "meanings": {}
+    },
+    {
+      "name": "CreateClosure",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 132,
+      "meanings": {
+        "2": "function"
+      }
+    },
+    {
+      "name": "CreateClosureLongIndex",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 133,
+      "meanings": {
+        "2": "function"
+      }
+    },
+    {
+      "name": "CreateThisForNew",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 134,
+      "meanings": {}
+    },
+    {
+      "name": "CreateThisForSuper",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 135,
+      "meanings": {}
+    },
+    {
+      "name": "SelectObject",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 136,
+      "meanings": {}
+    },
+    {
+      "name": "LoadParam",
+      "operands": [
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 137,
+      "meanings": {}
+    },
+    {
+      "name": "LoadParamLong",
+      "operands": [
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 138,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstUInt8",
+      "operands": [
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 139,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstInt",
+      "operands": [
+        "Reg8",
+        "Imm32"
+      ],
+      "opcode": 140,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstDouble",
+      "operands": [
+        "Reg8",
+        "Double"
+      ],
+      "opcode": 141,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstBigInt",
+      "operands": [
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 142,
+      "meanings": {
+        "1": "bigint"
+      }
+    },
+    {
+      "name": "LoadConstBigIntLongIndex",
+      "operands": [
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 143,
+      "meanings": {
+        "1": "bigint"
+      }
+    },
+    {
+      "name": "LoadConstString",
+      "operands": [
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 144,
+      "meanings": {
+        "1": "string"
+      }
+    },
+    {
+      "name": "LoadConstStringLongIndex",
+      "operands": [
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 145,
+      "meanings": {
+        "1": "string"
+      }
+    },
+    {
+      "name": "LoadConstEmpty",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 146,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstUndefined",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 147,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstNull",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 148,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstTrue",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 149,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstFalse",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 150,
+      "meanings": {}
+    },
+    {
+      "name": "LoadConstZero",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 151,
+      "meanings": {}
+    },
+    {
+      "name": "CoerceThisNS",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 152,
+      "meanings": {}
+    },
+    {
+      "name": "LoadThisNS",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 153,
+      "meanings": {}
+    },
+    {
+      "name": "ToNumber",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 154,
+      "meanings": {}
+    },
+    {
+      "name": "ToNumeric",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 155,
+      "meanings": {}
+    },
+    {
+      "name": "ToInt32",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 156,
+      "meanings": {}
+    },
+    {
+      "name": "AddEmptyString",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 157,
+      "meanings": {}
+    },
+    {
+      "name": "CreatePrivateName",
+      "operands": [
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 158,
+      "meanings": {
+        "1": "string"
+      }
+    },
+    {
+      "name": "GetArgumentsPropByValLoose",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 159,
+      "meanings": {}
+    },
+    {
+      "name": "GetArgumentsPropByValStrict",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 160,
+      "meanings": {}
+    },
+    {
+      "name": "GetArgumentsLength",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 161,
+      "meanings": {}
+    },
+    {
+      "name": "ReifyArgumentsStrict",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 162,
+      "meanings": {}
+    },
+    {
+      "name": "ReifyArgumentsLoose",
+      "operands": [
+        "Reg8"
+      ],
+      "opcode": 163,
+      "meanings": {}
+    },
+    {
+      "name": "ToPropertyKey",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 164,
+      "meanings": {}
+    },
+    {
+      "name": "CreateRegExp",
+      "operands": [
+        "Reg8",
+        "UInt32",
+        "UInt32",
+        "UInt32"
+      ],
+      "opcode": 165,
+      "meanings": {
+        "1": "string",
+        "2": "string"
+      }
+    },
+    {
+      "name": "UIntSwitchImm",
+      "operands": [
+        "Reg8",
+        "UInt32",
+        "Addr32",
+        "UInt32",
+        "UInt32"
+      ],
+      "opcode": 166,
+      "meanings": {}
+    },
+    {
+      "name": "StringSwitchImm",
+      "operands": [
+        "Reg8",
+        "UInt32",
+        "UInt32",
+        "Addr32",
+        "UInt32"
+      ],
+      "opcode": 167,
+      "meanings": {}
+    },
+    {
+      "name": "CreateGenerator",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 168,
+      "meanings": {
+        "2": "function"
+      }
+    },
+    {
+      "name": "CreateGeneratorLongIndex",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "UInt32"
+      ],
+      "opcode": 169,
+      "meanings": {
+        "2": "function"
+      }
+    },
+    {
+      "name": "IteratorBegin",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 170,
+      "meanings": {}
+    },
+    {
+      "name": "IteratorNext",
+      "operands": [
+        "Reg8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 171,
+      "meanings": {}
+    },
+    {
+      "name": "IteratorClose",
+      "operands": [
+        "Reg8",
+        "UInt8"
+      ],
+      "opcode": 172,
+      "meanings": {}
+    },
+    {
+      "name": "TypedLoadParent",
+      "operands": [
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 173,
+      "meanings": {}
+    },
+    {
+      "name": "Jmp",
+      "operands": [
+        "Addr8"
+      ],
+      "opcode": 174,
+      "meanings": {}
+    },
+    {
+      "name": "JmpLong",
+      "operands": [
+        "Addr32"
+      ],
+      "opcode": 175,
+      "meanings": {}
+    },
+    {
+      "name": "JmpTrue",
+      "operands": [
+        "Addr8",
+        "Reg8"
+      ],
+      "opcode": 176,
+      "meanings": {}
+    },
+    {
+      "name": "JmpTrueLong",
+      "operands": [
+        "Addr32",
+        "Reg8"
+      ],
+      "opcode": 177,
+      "meanings": {}
+    },
+    {
+      "name": "JmpFalse",
+      "operands": [
+        "Addr8",
+        "Reg8"
+      ],
+      "opcode": 178,
+      "meanings": {}
+    },
+    {
+      "name": "JmpFalseLong",
+      "operands": [
+        "Addr32",
+        "Reg8"
+      ],
+      "opcode": 179,
+      "meanings": {}
+    },
+    {
+      "name": "JmpUndefined",
+      "operands": [
+        "Addr8",
+        "Reg8"
+      ],
+      "opcode": 180,
+      "meanings": {}
+    },
+    {
+      "name": "JmpUndefinedLong",
+      "operands": [
+        "Addr32",
+        "Reg8"
+      ],
+      "opcode": 181,
+      "meanings": {}
+    },
+    {
+      "name": "JmpTypeOfIs",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "UInt16"
+      ],
+      "opcode": 182,
+      "meanings": {}
+    },
+    {
+      "name": "JLess",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 183,
+      "meanings": {}
+    },
+    {
+      "name": "JLessLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 184,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLess",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 185,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLessLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 186,
+      "meanings": {}
+    },
+    {
+      "name": "JLessN",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 187,
+      "meanings": {}
+    },
+    {
+      "name": "JLessNLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 188,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLessN",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 189,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLessNLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 190,
+      "meanings": {}
+    },
+    {
+      "name": "JLessEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 191,
+      "meanings": {}
+    },
+    {
+      "name": "JLessEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 192,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLessEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 193,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLessEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 194,
+      "meanings": {}
+    },
+    {
+      "name": "JLessEqualN",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 195,
+      "meanings": {}
+    },
+    {
+      "name": "JLessEqualNLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 196,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLessEqualN",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 197,
+      "meanings": {}
+    },
+    {
+      "name": "JNotLessEqualNLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 198,
+      "meanings": {}
+    },
+    {
+      "name": "JGreater",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 199,
+      "meanings": {}
+    },
+    {
+      "name": "JGreaterLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 200,
+      "meanings": {}
+    },
+    {
+      "name": "JNotGreater",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 201,
+      "meanings": {}
+    },
+    {
+      "name": "JNotGreaterLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 202,
+      "meanings": {}
+    },
+    {
+      "name": "JGreaterEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 203,
+      "meanings": {}
+    },
+    {
+      "name": "JGreaterEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 204,
+      "meanings": {}
+    },
+    {
+      "name": "JNotGreaterEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 205,
+      "meanings": {}
+    },
+    {
+      "name": "JNotGreaterEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 206,
+      "meanings": {}
+    },
+    {
+      "name": "JEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 207,
+      "meanings": {}
+    },
+    {
+      "name": "JEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 208,
+      "meanings": {}
+    },
+    {
+      "name": "JNotEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 209,
+      "meanings": {}
+    },
+    {
+      "name": "JNotEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 210,
+      "meanings": {}
+    },
+    {
+      "name": "JStrictEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 211,
+      "meanings": {}
+    },
+    {
+      "name": "JStrictEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 212,
+      "meanings": {}
+    },
+    {
+      "name": "JStrictNotEqual",
+      "operands": [
+        "Addr8",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 213,
+      "meanings": {}
+    },
+    {
+      "name": "JStrictNotEqualLong",
+      "operands": [
+        "Addr32",
+        "Reg8",
+        "Reg8"
+      ],
+      "opcode": 214,
+      "meanings": {}
+    },
+    {
+      "name": "JmpBuiltinIs",
+      "operands": [
+        "Addr8",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 215,
+      "meanings": {}
+    },
+    {
+      "name": "JmpBuiltinIsLong",
+      "operands": [
+        "Addr32",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 216,
+      "meanings": {}
+    },
+    {
+      "name": "JmpBuiltinIsNot",
+      "operands": [
+        "Addr8",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 217,
+      "meanings": {}
+    },
+    {
+      "name": "JmpBuiltinIsNotLong",
+      "operands": [
+        "Addr32",
+        "UInt8",
+        "Reg8"
+      ],
+      "opcode": 218,
+      "meanings": {}
+    }
+  ]
+}
